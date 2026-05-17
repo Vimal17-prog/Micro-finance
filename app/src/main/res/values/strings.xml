@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Grama-Khata</string>
+    <string name="shop_name_pref_key">shop_name</string>
+    <string name="onboarding_completed_pref_key">onboarding_completed</string>
+
+    <!-- Onboarding -->
+    <string name="welcome_to_grama_khata">Welcome to Grama-Khata</string>
+    <string name="enter_shop_name">Enter your Shop Name</string>
+    <string name="get_started">Get Started</string>
+    <string name="error_empty_shop_name">Please enter a shop name</string>
+
+    <!-- Home -->
+    <string name="search_customers">Search customers...</string>
+    <string name="total_net_balance">Total Net Balance</string>
+    <string name="add_customer">Add Customer</string>
+    <string name="no_customers_found">No customers found</string>
+
+    <!-- Customer -->
+    <string name="customer_name">Customer Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="save_customer">Save Customer</string>
+    <string name="edit_customer">Edit Customer</string>
+    <string name="delete_customer">Delete Customer</string>
+    <string name="confirm_delete">Are you sure you want to delete this customer?</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+
+    <!-- Transactions -->
+    <string name="give_credit">Give (Credit)</string>
+    <string name="take_payment">Take (Payment)</string>
+    <string name="amount">Amount</string>
+    <string name="note">Note (Optional)</string>
+    <string name="add_transaction">Add Transaction</string>
+    <string name="transaction_history">Transaction History</string>
+    <string name="net_balance">Net Balance: Rs. %1$s</string>
+    <string name="due_amount">Due: Rs. %1$s</string>
+
+    <!-- Reports & Dashboard -->
+    <string name="daily_report">Daily Collection Report</string>
+    <string name="due_dashboard">Due Dashboard</string>
+    <string name="total_collection">Total Collection Today: Rs. %1$s</string>
+    <string name="share_report">Share Report</string>
+
+    <!-- Reminder -->
+    <string name="reminder_message">Namaskara, your due at %1$s is Rs.%2$s</string>
+    <string name="send_reminder">Send Reminder</string>
+</resources>

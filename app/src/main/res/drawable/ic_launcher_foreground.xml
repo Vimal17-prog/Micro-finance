@@ -1,0 +1,16 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Ledger Book Icon -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M30,20h48c2.2,0 4,1.8 4,4v60c0,2.2 -1.8,4 -4,4H30c-2.2,0 -4,-1.8 -4,-4V24C26,21.8 27.8,20 30,20z" />
+    <path
+        android:fillColor="#FF6200EE"
+        android:pathData="M32,25h44v5H32zM32,35h44v2H32zM32,42h44v2H32zM32,49h44v2H32zM32,56h20v2H32z" />
+    <path
+        android:fillColor="#FF6200EE"
+        android:pathData="M26,24c0,-2.2 1.8,-4 4,-4v68c-2.2,0 -4,-1.8 -4,-4V24z" />
+</vector>

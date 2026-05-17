@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.micro_finance.ui.fragment.SplashFragment"
+        android:label="Splash"
+        tools:layout="@layout/fragment_splash">
+        <action
+            android:id="@+id/actionSplashToOnboarding"
+            app:destination="@id/onboardingFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/actionSplashToHome"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/onboardingFragment"
+        android:name="com.example.micro_finance.ui.fragment.OnboardingFragment"
+        android:label="Onboarding"
+        tools:layout="@layout/fragment_onboarding">
+        <action
+            android:id="@+id/actionOnboardingToHome"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/onboardingFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.micro_finance.ui.fragment.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/actionHomeToAddEditCustomer"
+            app:destination="@id/addEditCustomerFragment" />
+        <action
+            android:id="@+id/actionHomeToCustomerDetails"
+            app:destination="@id/customerDetailsFragment" />
+        <action
+            android:id="@+id/actionHomeToDueDashboard"
+            app:destination="@id/dueDashboardFragment" />
+        <action
+            android:id="@+id/actionHomeToDailyReport"
+            app:destination="@id/dailyReportFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addEditCustomerFragment"
+        android:name="com.example.micro_finance.ui.fragment.AddEditCustomerFragment"
+        android:label="Add/Edit Customer"
+        tools:layout="@layout/fragment_add_edit_customer">
+        <argument
+            android:name="customerId"
+            android:defaultValue="-1L"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/customerDetailsFragment"
+        android:name="com.example.micro_finance.ui.fragment.CustomerDetailsFragment"
+        android:label="Customer Details"
+        tools:layout="@layout/fragment_customer_details">
+        <argument
+            android:name="customerId"
+            app:argType="long" />
+        <action
+            android:id="@+id/actionCustomerDetailsToAddEditCustomer"
+            app:destination="@id/addEditCustomerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/dueDashboardFragment"
+        android:name="com.example.micro_finance.ui.fragment.DueDashboardFragment"
+        android:label="Due Dashboard"
+        tools:layout="@layout/fragment_due_dashboard">
+        <action
+            android:id="@+id/actionDueDashboardToCustomerDetails"
+            app:destination="@id/customerDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/dailyReportFragment"
+        android:name="com.example.micro_finance.ui.fragment.DailyReportFragment"
+        android:label="Daily Report"
+        tools:layout="@layout/fragment_daily_report" />
+
+</navigation>
